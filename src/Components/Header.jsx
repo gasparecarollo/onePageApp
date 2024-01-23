@@ -5,9 +5,9 @@ import BreakingBad from '../assets/BreakingBad.png'
 const Header = () => {
 
     return (
-        <Header>
+        <header>
             <img className='breakingbad-logo' src={BreakingBad} alt='Heisenberg and Jesse from Breaking Bad' />
-        </Header>
+        </header>
     );
 
 }
