@@ -9,7 +9,7 @@ const Main = ({ breakingbad }) => {
             <div>
                 <h2>{breakingbad.name.charAt(0).toUpperCase() + breakingbad.name.slice(1)}  </h2>
                 <h3> Quote: {breakingbad.quote}</h3>
-
+                console.log(breakingbad.name)
             </div>
 
         </main >
