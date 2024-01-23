@@ -1,25 +1,25 @@
 import React from 'react';
 import WalterWhite from '../assets/WalterWhite.png'
 
-const Main = ({ setBreakingBad }) => {
+const Main = ({ breakingBad }) => {
     return (
         <main className='breakingbad'>
             {
-                setBreakingBad ? (
+                breakingBad ? (
                     <div className='authorAndQuote-card'>
-                        <h2> Author: {setBreakingBad[0]?.author} </h2>
-                        <h3> Quote: {setBreakingBad[0]?.quote}</h3>
+                        <h2> Author: {breakingBad[0]?.author} </h2>
+                        <h3> Quote: {breakingBad[0]?.quote}</h3>
 
-                    </div>)
-                    :
+                    </div>
+                ) : (
                     <div className="img-container">
-                        <img className="walterwhite-png" src={WalterWhite} />
+                        <img className="walterwhite-png" src={WalterWhite} alt="Walter White logo" />
                     </div>
 
-            }
+                )}
         </main >
     );
-}
+};
 
 
 

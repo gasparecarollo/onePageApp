@@ -10,10 +10,10 @@ const SearchNav = ({ setBreakingBad }) => {
 
     const fetchQuote = (event) => {
         event.preventDefault()
-        fetch(`https://api.breakingbadquotes.xyz/v1/quotes/`)
+        fetch(`https://api.breakingbadquotes.xyz/v1/quotes/random`)
             .then(res => res.json())
             .then(res => {
-                setBreakingBad([res])
+                setBreakingBad(res)
             })
     }
     return (
