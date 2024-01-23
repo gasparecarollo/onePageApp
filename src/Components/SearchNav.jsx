@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import treadLightly from '../assets/treadLightly.png'
 
-const SearchNav = ({ setAuthor }) => {
+const SearchNav = ({ setBreakingBad }) => {
     const [quote, setQuote] = useState("")
 
     const handleChange = (event) => {
@@ -10,10 +10,10 @@ const SearchNav = ({ setAuthor }) => {
 
     const fetchQuote = (event) => {
         event.preventDefault()
-        fetch(`https://api.breakingbadquotes.xyz/v1/quotes/random`)
+        fetch(`https://api.breakingbadquotes.xyz/v1/quotes/`)
             .then(res => res.json())
             .then(res => {
-                setAuthor(res)
+                setBreakingBad([res])
             })
     }
     return (

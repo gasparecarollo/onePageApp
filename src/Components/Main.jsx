@@ -1,14 +1,14 @@
 import React from 'react';
 import WalterWhite from '../assets/WalterWhite.png'
 
-const Main = ({ setAuthor }) => {
+const Main = ({ setBreakingBad }) => {
     return (
         <main className='breakingbad'>
             {
-                breakingbad ? (
+                setBreakingBad ? (
                     <div className='authorAndQuote-card'>
-                        <h2> Author: {breakingbad[0]?.author} </h2>
-                        <h3> Quote: {breakingbad[0]?.quote}</h3>
+                        <h2> Author: {setBreakingBad[0]?.author} </h2>
+                        <h3> Quote: {setBreakingBad[0]?.quote}</h3>
 
                     </div>)
                     :

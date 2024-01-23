@@ -6,13 +6,13 @@ import Main from './Components/Main.jsx'
 import Footer from './Components/Footer.jsx'
 
 function App() {
-  const [author, setAuthor] = useState(null)
+  const [BreakingBad, setBreakingBad] = useState(null)
 
   return (
     <div className='app'>
       <Header />
-      <SearchNav setAuthor={setAuthor} />
-      <Main author={author} />
+      <SearchNav setBreakingBad={setBreakingBad} />
+      <Main BreakingBad={BreakingBad} />
       <Footer />
     </div >
   )
