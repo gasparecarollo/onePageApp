@@ -40,4 +40,4 @@ const SearchNav = ({ setBreakingBad }) => {
 
 };
 
-export default SearchNav;
+export default SearchNav

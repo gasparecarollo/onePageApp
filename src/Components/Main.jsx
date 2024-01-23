@@ -23,4 +23,4 @@ const Main = ({ breakingbad }) => {
 
 
 
-export default Main;
+export default Main
