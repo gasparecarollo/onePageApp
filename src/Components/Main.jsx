@@ -1,5 +1,5 @@
 import React from 'react';
-import WalterWhite from '../assets/WalterWhite/WalterWhite.png';
+import WalterWhite from '../assets/WalterWhite.png'
 
 const Main = ({ breakingbad }) => {
     return (

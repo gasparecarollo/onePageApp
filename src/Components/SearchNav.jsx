@@ -39,3 +39,5 @@ const SearchNav = ({ setBreakingBad }) => {
     );
 
 };
+
+export default SearchNav;
