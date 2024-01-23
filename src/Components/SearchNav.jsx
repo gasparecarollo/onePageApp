@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import treadLightly from '../assets/treadLightly.png'
 
-const SearchNav = ({ setBreakingBad }) => {
+const SearchNav = ({ setAuthor }) => {
     const [quote, setQuote] = useState("")
 
     const handleChange = (event) => {
@@ -10,24 +10,16 @@ const SearchNav = ({ setBreakingBad }) => {
 
     const fetchQuote = (event) => {
         event.preventDefault()
-        fetch(`https://api.breakingbadquotes.xyz/v1/quotes/${quote}`)
+        fetch(`https://api.breakingbadquotes.xyz/v1/quotes/random`)
             .then(res => res.json())
             .then(res => {
-                setQuote("")
-                setBreakingBad(res)
+                setAuthor(res)
             })
     }
     return (
 
         <nav>
             <form onSubmit={fetchQuote}>
-                <input
-                    type="text"
-                    onChange={handleChange}
-                    value={quote}
-                    placeholder="Search by Character Name"
-                />
-
                 <button type="submit">
                     <img src={treadLightly}
                         alt="Heisenberg tread lightly picture"

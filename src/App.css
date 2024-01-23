@@ -5,7 +5,73 @@
 }
 
 header {
+  padding: 5px;
   text-align: center;
   background-color: greenyellow;
+}
 
+nav {
+  padding: 25px 0 10px 0;
+  background-color: black;
+}
+
+input {
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  height: 60px;
+  display: block;
+  margin: 5px auto;
+}
+
+
+main {
+  background-color: cadetblue;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 3rem;
+
+}
+
+footer {
+  background-color: black;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 25px;
+}
+
+.authorAndQuote-card {
+  background-color: black;
+  color: greenyellow;
+}
+
+.Heisenberg-button {
+  height: 100%;
+}
+
+.breakingbad {
+  text-align: center;
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.walterwhite-png {
+  height: 300px;
+  padding-bottom: 0px;
 }

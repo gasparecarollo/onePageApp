@@ -1,22 +1,22 @@
 import React from 'react';
 import WalterWhite from '../assets/WalterWhite.png'
 
-const Main = ({ breakingbad }) => {
+const Main = ({ setAuthor }) => {
     return (
         <main className='breakingbad'>
-            {/* {
-                breakingbad ?
-                    // <div>
-                    //     <h2> Author: {breakingbad.name.charAt(0).toUpperCase() + breakingbad.name.slice(1)} </h2>
-                    //     <h3> Quote: {breakingbad.quote}</h3>
+            {
+                breakingbad ? (
+                    <div className='authorAndQuote-card'>
+                        <h2> Author: {breakingbad[0]?.author} </h2>
+                        <h3> Quote: {breakingbad[0]?.quote}</h3>
 
-                    // </div>
+                    </div>)
                     :
                     <div className="img-container">
                         <img className="walterwhite-png" src={WalterWhite} />
                     </div>
 
-            } */}
+            }
         </main >
     );
 }
