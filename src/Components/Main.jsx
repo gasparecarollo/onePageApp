@@ -5,19 +5,12 @@ const Main = ({ breakingbad }) => {
     return (
 
         <main className='breakingbad'>
-            {breakingbad ?
-                    <h2>
 
-                    </h2>
-                    <h3>
+            <div>
+                <h2>{breakingbad.name.charAt(0).toUpperCase() + breakingbad.name.slice(1)}  </h2>
+                <h3> Quote: {breakingbad.quote}</h3>
 
-                    </h3>
-                :
-
-                </div>
-}
-
-}
+            </div>
 
         </main >
 
